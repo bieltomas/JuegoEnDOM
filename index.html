@@ -5,28 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrera de coches</title>
+    <title>F1 Racing</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100">
     <div class="flex justify-center">
-        <h1 class="font-bold mt-10 text-2xl">Carrera de coches</h1>
+        <h1 class="font-bold mt-10 text-2xl">¡Bienvenido a F1 Racing!</h1>
     </div>
     <br>
+    <div class="flex justify-center">
+        <h2 class="font-bold text-xl">Elige un equipo:</h2>
+        <select name="opcion" id="opcion" class="rounded-lg bg-blue-300 mx-2">
+            <option value="1">Ferrari</option>
+            <option value="2">Mercedes</option>
+            <option value="3">Formula E</option>
+            <option value="4">Renault</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div class="flex justify-center">
     <button id="print"
-            class="flex justify-center bg-gray-300 rounded-lg text-xl" onclick="imprimirCoches()">
-            Imprimir coches
+            class="flex justify-center bg-blue-300 hover:bg-blue-400 rounded-lg border border-blue-400 text-xl mx-6" onclick="imprimirCoches()">
+            <p class="mx-2">Imprimir Parrilla</p>
     </button>
+    <br>
     <button id="carrera"
-            class="flex justify-center bg-gray-300 rounded-lg text-xl" onclick="iniciar()">
-            Iniciar Carrera
+            class="flex justify-center bg-blue-300 hover:bg-blue-400 rounded-lg text-xl" onclick="iniciar()">
+            <p class="mx-2">Iniciar Carrera</p>
     </button>
+    </div>
     <br>
     <br>
-    <div id="pista" class="border border-black w-full flex flex-col items-start">
+    <div id="pista" class="border border-black w-screen flex flex-col items-start" style="background-image: url('/images/circuito.jpg'); background-repeat: no-repeat; background-size: cover;">
         
     </div>
 </body>
