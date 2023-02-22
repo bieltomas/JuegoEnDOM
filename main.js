@@ -56,12 +56,12 @@ function carrera() {
         }
 
         if (coches[3].offsetLeft >= document.getElementById("pista").offsetWidth - 50 && document.getElementById("opcion").value == "4") {
-            alert("Enhorabuena! Ganó el McLaren");
+            alert("Enhorabuena! Ganó el Renault");
             clearInterval(intervalo);
             break;
         }
         else if (coches[3].offsetLeft >= document.getElementById("pista").offsetWidth - 50 && document.getElementById("opcion").value != "4") {
-            alert("Mala suerte... Ganó el McLaren");
+            alert("Mala suerte... Ganó el Renault");
             clearInterval(intervalo);
             break;
 
